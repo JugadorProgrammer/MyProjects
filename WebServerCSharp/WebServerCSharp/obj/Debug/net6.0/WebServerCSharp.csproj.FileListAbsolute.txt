@@ -1,0 +1,15 @@
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\bin\Debug\net6.0\WebServerCSharp.exe
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\bin\Debug\net6.0\WebServerCSharp.deps.json
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\bin\Debug\net6.0\WebServerCSharp.runtimeconfig.json
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\bin\Debug\net6.0\WebServerCSharp.dll
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\bin\Debug\net6.0\WebServerCSharp.pdb
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.csproj.AssemblyReference.cache
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.AssemblyInfoInputs.cache
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.AssemblyInfo.cs
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.csproj.CoreCompileInputs.cache
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.dll
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\refint\WebServerCSharp.dll
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.pdb
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\WebServerCSharp.genruntimeconfig.cache
+C:\Users\dinam\source\MyProjectsCSarp\WebServerCSharp\WebServerCSharp\obj\Debug\net6.0\ref\WebServerCSharp.dll
