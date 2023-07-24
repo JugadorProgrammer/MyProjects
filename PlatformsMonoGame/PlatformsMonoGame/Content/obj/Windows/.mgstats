@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/dinam/source/MyProjectsCSarp/PlatformsMonoGame/PlatformsMonoGame/Content/mainFont.spritefont","C:/Users/dinam/source/MyProjectsCSarp/PlatformsMonoGame/PlatformsMonoGame/Content/bin/Windows/mainFont.xnb","FontDescriptionProcessor","SpriteFontContent",2064,273274,0,3060185
+"C:/Users/dinam/source/MyProjectsCSarp/PlatformsMonoGame/PlatformsMonoGame/Content/scoreFont.spritefont","C:/Users/dinam/source/MyProjectsCSarp/PlatformsMonoGame/PlatformsMonoGame/Content/bin/Windows/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2064,273274,0,0598566
