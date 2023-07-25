@@ -1,0 +1,69 @@
+﻿@using ModelViewController.DataBase
+@model IEnumerable<Region>
+
+@{
+	ViewData["Title"] = "Доставка";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm">
+		</div>
+		<div class="col-sm">
+			<form class="align-items-center">
+				<h1 class="w-100 m-3">
+					Заполните поля
+				</h1>
+				<div class="form-floating w-100 m-3">
+					<input type="email" class="form-control" placeholder="name@example.com">
+					<label>Почта *</label>
+				</div>
+				<div class="form-floating w-100 m-3">
+					<input type="password" class="form-control " placeholder="Password">
+					<label>Пароль *</label>
+				</div>
+
+				<div class="form-floating w-100 m-3">
+					<input class="form-control " placeholder="Иван">
+					<label>Имя *</label>
+				</div>
+				<div class="form-floating w-100 m-3">
+
+					<input class="form-control " placeholder="Иванов">
+					<label>Фамилия *</label>
+				</div>
+
+				<div class="form-floating w-100 m-3">
+					<select class="form-control" id="regionSelect" >
+						@foreach(Region op in Model)
+						{
+							<option value=@op.Id>@op.Name</option>
+						}
+					</select>
+					<label>Область *</label>
+				</div>
+
+				<div class="form-floating w-100 m-3" id="citySelect">
+					
+				</div>
+
+
+				<div class="form-floating w-100 m-3">
+					<input class="form-control " placeholder="ул.Ярцевская">
+					<label>Адрес доставки *</label>
+				</div>
+
+				<div class="form-floating w-100 m-3">
+					<input class="form-control p-2" placeholder="+7(999)-99-99-99">
+					<label>Контактный телефон *</label>
+				</div>
+
+
+				<button class=" btn btn-lg btn-primary w-100 m-3" type="submit">Заказать</button>
+			</form>
+		</div>
+		<div class="col-sm">
+		</div>
+	</div>
+
+</div>

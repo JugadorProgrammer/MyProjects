@@ -1,0 +1,16 @@
+﻿@using ModelViewController.DataBase
+@model Product
+
+<div class="container">
+    <ul>
+        @{
+            foreach (var h in Model.Characteristics.Split("\n"))
+            {
+                if (!string.IsNullOrEmpty(h.Replace(" ", "").Replace("\r", "")))
+                {
+                    <li>@h</li>
+                }
+            }
+        }
+    </ul>
+</div>

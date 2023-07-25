@@ -1,0 +1,82 @@
+﻿@using ModelViewController.DataBase
+@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Каталог";
+}
+
+<form id="filters-form" role="form">
+    <div class="col-md-4 " style="margin-left: 10px;">
+        <h2 style="font-size: 20px" class="w-50 h-25">Бренды</h2>
+        <div id="brands" class="w-50 h-25">
+            <div><label><input class="checkbox" type="checkbox" name="brands[]" value="1"> Canon</label></div>
+            <div><label><input class="checkbox" type="checkbox" name="brands[]" value="2"> Polaroid</label></div>
+            <div><label><input class="checkbox" type="checkbox" name="brands[]" value="3"> FujiFilm</label></div>
+        </div>
+    </div>
+
+    <div class="col-md-4 w-50 h-25" style="margin-left: 10px;">
+        <h2 style="font-size: 20px" class="w-50 h-25">Фильтр по ценам</h2>
+        <input type="range" value="50000" min="5000" max="50000" onchange="changeRange()" width="50" class=" w-25 h-25" id="priceRange">
+        <h6 id="pricesLabel" class="w-50 h-25">50000</h6>
+    </div>
+
+    <div class="col-md-4 " style="margin-left: 10px;">
+        <h2 style="font-size: 20px" class="w-50 h-25">Сортировка</h2>
+        <select id="sort" class="form-control w-50 h-25">
+            <!--элемент интерфейса в виде раскрывающегося списка-->
+            <option value="price_asc">По цене, сначала дешевые</option>
+            <option value="price_desc">По цене, сначала дорогие</option>
+            <!--<option value="rating_desc">По популярности</option>-->
+            <option value="good_asc">По названию, A-Z</option>
+            <option value="good_desc">По названию, Z-A</option>
+        </select>
+    </div>
+
+    <div class="col-md-4 mt-3" style="margin-left: 10px;">
+        <button type="button" onclick="getSortedProduct()" class="btn btn-outline-dark col-md-4 w-50 h-25">Показать</button>
+    </div>
+    <div>
+        <h3 class="text-center">Название</h3>
+        <input class="form-control me-2 m-2" type="text" id="input" oninput="getSortedProduct()" placeholder="Название" aria-label="Название">
+    </div>    
+    
+</form>
+
+
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="ctalogDiv">
+            @{
+                foreach (var product in Model)
+                {
+                    <div class="col">
+                        <div class="card shadow-sm border">
+                            <div class="border-5">
+                                <img height="200" width="300" src=@product.Image />
+                            </div>
+
+                            <div class="card-body border-5">
+                                <h4 class="text-center"><a asp-route-id=@product.Id asp-action="Individual" asp-controller="Catalog" class="link-dark">@product.Name</a></h4>
+                                <p class="card-text">@product.Description</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-success">В корзину</button>
+                                    </div>
+                                    <small class="text-body-secondary">Цена: @product.Price</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

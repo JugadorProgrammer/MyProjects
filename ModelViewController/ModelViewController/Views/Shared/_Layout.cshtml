@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин фотооборудования PhotoBox - @ViewData["Title"] </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ModelViewController.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header class="d-flex justify-content-center py-3 bg-dark text-white">
+        <div class="row">
+            <div class="col-1 mr-5">
+                <a asp-controller="Home" asp-action="Index" class="d-flex align-items-center mb-0 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2 m-2" width="60" height="50" src="~/images/smt.png" />
+                </a>
+            </div>
+
+            <div class="col-11 ml-5">
+                <ul class="nav nav-pills p-3 ">
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Catalog" asp-action="Index">Каталог</a></li>
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Home" asp-action="Service">Услуги</a></li>
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Home" asp-action="Delivery">Доставка</a></li>
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Home" asp-action="About">О нас</a></li>
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="text-white m-3" asp-controller="Product" asp-action="Index">Создать новый товар</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <a class="top_button" onclick="topFunction()" id="myBtn">
+        <img src="~/images/top_button.png" class="top border-3 border-white">
+    </a>
+
+    <div class="container h-100 mt-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <footer class=" mt-auto py-3 bg-body-tertiary navbar-fixed-bottom mb-0  bg-dark text-white">
+        <div class="container">
+            @@ 2022 Все права защищены<br />
+            
+                Вся представленная на сайте информация носит информационный характер и ни при каких условиях не является публичной
+                офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ
+            
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

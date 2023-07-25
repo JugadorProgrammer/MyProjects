@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Услуги";
+}
+<style>
+    .content_block {
+        overflow: hidden;
+        position: relative;
+        max-width: 400px;
+    }
+
+        .content_block.hide {
+            height: 150px;
+        }
+
+            .content_block.hide:after {
+                content: "";
+                display: block;
+                height: 100px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+            }
+
+    .content_toggle {
+        margin-left: 20px;
+    }
+</style>
+<div>
+    <div class="content_block hide ">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet lectus et ligula sagittis blandit a eget odio. Suspendisse auctor sollicitudin justo, accumsan volutpat neque ornare molestie. Nulla augue ligula, accumsan vitae aliquam vel, viverra a ante. Phasellus porttitor interdum eleifend. Proin ac lorem eget sem interdum congue. Aenean sodales tellus non augue condimentum, sit amet porta sapien hendrerit. Etiam gravida turpis at elit placerat aliquam. Duis mattis velit vel odio adipiscing sodales. Phasellus ac aliquet enim. Aenean quis posuere libero, sit amet convallis nisl. Vestibulum commodo tincidunt urna eu commodo. Vestibulum eleifend tempus felis, in sollicitudin odio. In lacinia hendrerit risus, elementum egestas est pretium et.</p>
+    </div>
+    <a class="text-black" href="#">Подробнее</a>
+</div>

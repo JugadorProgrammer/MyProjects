@@ -1,0 +1,28 @@
+﻿@using ModelViewController.DataBase
+@model IEnumerable<Product>
+
+
+@{
+    foreach (var product in Model)
+    {
+        <div class="col">
+            <div class="card shadow-sm border">
+                <div class="border-5">
+                    <img height="200" width="300" src=@product.Image />
+                </div>
+
+                <div class="card-body border-5">
+                    <h4 class="text-center"><a asp-route-id=@product.Id asp-action="Individual" asp-controller="Catalog" class="link-dark">@product.Name</a></h4>
+                    <p class="card-text">@product.Description</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-success">В корзину</button>
+                        </div>
+                        <small class="text-body-secondary">Цена: @product.Price</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+

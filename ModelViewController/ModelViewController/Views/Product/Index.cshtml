@@ -1,0 +1,69 @@
+﻿@using ModelViewController.DataBase;
+@model Product
+@{
+    ViewData["Title"] = "Добавить новый продукт";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm w-50 center-block">
+            <h2 class="text-center w-50">Фото:</h2>
+            <div id="fileCol">
+                <img src=@PathSaver.ImagePath alt="ошибка" class="img-thumbnail m-3 w-50 img-fluid" />
+            </div>
+            @*<form method="post" asp-antiforgery="true"  enctype="multipart/form-data" class="center-block  w-50 m-3">*@
+            
+            <div class="center-block  w-50 m-2" he>
+                <input type="file" id="fileinput" name="uploadedFile" class=" btn btn-lg w-100 m-3 h-50" />
+            </div>
+            <div class="center-block  w-50 m-1">
+                <button type="button" onclick="saveFile()" class="btn btn-primary col-md-4 w-50 h-50">Сохранить фото</button>
+            </div>
+
+         </div>
+        <div class="col-sm w-50 ">
+            <h2 class="text-center w-50">Информация</h2>
+            <div asp-validation-summary="None"></div>
+            <form class="center-block  m-3" asp-antiforgery="true" asp-action="OnPostProduct">
+                <div class="w-50 m-3 h-25 form-floating">
+                    <input class="form-control " asp-for="@Model.Name" />
+                    <label>Название:</label>
+                </div>
+
+                <div class="w-50 m-3 h-25 form-floating">
+                    <input class="form-control " asp-for="@Model.Description" />
+                    <label> Описание:</label>
+                </div>
+
+                <div class="form-floating w-50  m-3 h-25">
+                    <input class="form-control " asp-for="@Model.Price" type="number" />
+                    <label>Стоимость:</label>
+                </div>
+
+                <div class="form-floating w-50 m-3 h-25">
+                    <textarea class="form-control" asp-for="@Model.Characteristics"></textarea>
+                    <label>Основные характеристики:</label>
+                </div>
+
+                <div class="w-50 m-3 h-25 form-floating">
+
+                    <select class="form-control " asp-for="@Model.ModelName">
+                        <option>Canon</option>
+                        <option>Polaroid</option>
+                        <option>FujiFilm</option>
+                    </select>
+                    <label>Модель:</label><br />
+                </div>
+
+                <input type="submit" value="Отправить" class=" btn btn-lg btn-primary w-50 m-3 mt-0 h-25" />
+            </form>
+            
+        </div>
+    </div>
+</div>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

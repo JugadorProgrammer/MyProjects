@@ -1,0 +1,13 @@
+﻿@using ModelViewController.DataBase
+@model IEnumerable<City>
+
+
+<select class="form-control" id="regionSelect">
+    @{
+        foreach (City op in Model)
+        {
+            <option>@op.Name</option>
+        }
+    }
+</select>
+<label>Область *</label>
