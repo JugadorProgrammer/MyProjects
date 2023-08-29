@@ -1,0 +1,35 @@
+﻿<Window x:Class="GuessTheNumber.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuessTheNumber"
+        mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
+        Title="Игра : " Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="TrysLabel" Grid.Row="0" Grid.Column="1" Margin="0,20,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" HorizontalAlignment="Center" FontSize="25" Background="White" Foreground="DarkTurquoise" Width="272"/>
+
+        <ProgressBar x:Name="GameProgressBar" Minimum="0" Maximum="100" Margin="0,50,0,0"  FontSize="25" Background="White" Foreground="DarkTurquoise" Width="510" Height="35" Grid.ColumnSpan="3"/>
+
+        <Label Content="Ваше число :" Grid.Row="1" Grid.Column="1" Margin="0,0,0,50" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="25" Background="White" Foreground="DarkTurquoise" Width="200"/>
+        <TextBox x:Name="ChackTextBox" PreviewTextInput="ChackTextBox_PreviewTextInput" Grid.Row="1" Grid.Column="1" Margin="0,60,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Background="White" Foreground="DarkTurquoise" Width="200"/>
+        <Button x:Name="CheckButton" Click="CheckButton_Click"  Grid.Row="2" Grid.Column="1" Content=" Проверить " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Background="White" Foreground="DarkTurquoise" Width="196" />
+        <Button x:Name="ExitButton" Click="ExitButton_Click"  Grid.Row="2" Grid.Column="2" Content=" Назад " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Background="White" Foreground="DarkTurquoise" />
+
+
+
+    </Grid>
+</Window>
