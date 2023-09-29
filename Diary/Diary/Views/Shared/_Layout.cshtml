@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ежедневник</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Diary.styles.css" asp-append-version="true" />
+</head>
+<body >
+    <header class="p-3 bg-dark text-white">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"> 
+                <h3 class="text-center text-white">Ежедневник</h3>
+            </div>
+            <div class="col-4">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <div class="m-3 mt-0 mb-0">Введите дату :</div><br />
+                        <div class="text-end">
+                            <form>
+                                <div class="form-group">
+                                    <input id="calendar" onchange="calendarOnChange()" type="date" class="form-control" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="vandaBg" class="w-100 h-100 m-0" >
+        <div class="m-3 mt-3 mb-0 ">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    
+
+    <footer class="border-top footer text-white bg-dark">
+        <div class="container">
+            &copy; 2023 - Diary - <a class="text-white" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/js/three.r134.min.js"></script>
+    <script src="~/js/vanta.clouds.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"  defer></script>
+    <script src="~/lib/jquery/dist/jquery.js"  defer></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true" defer></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

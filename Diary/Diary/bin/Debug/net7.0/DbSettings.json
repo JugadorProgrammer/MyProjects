@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=laptop-97jd81gk;Initial Catalog=Diary;Integrated Security=True;TrustServerCertificate=True"
+  }
+}

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dinam\source\MyProjectsCSarp\PizzaOrders\PizzaOrders\obj\Debug\
+C:\Users\dinam\OneDrive\Документы\GitHub\MyProjects\PizzaOrders\PizzaOrders\obj\Debug\
 PizzaOrders
 none
 false
 DEBUG;TRACE
-C:\Users\dinam\source\MyProjectsCSarp\PizzaOrders\PizzaOrders\App.xaml
+C:\Users\dinam\OneDrive\Документы\GitHub\MyProjects\PizzaOrders\PizzaOrders\App.xaml
 7-775745626
 
-13-496905741
+141766981229
 13-946294123
 AddProductWindow.xaml;CreatOrderWindow.xaml;ForBakersWindow.xaml;ForCourierWindow.xaml;MainWindow.xaml;PaidOrdersWindow.xaml;ReadyOrdersWindow.xaml;
 
-False
+True
 
