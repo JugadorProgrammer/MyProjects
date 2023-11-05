@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cCvKpXThnYohXCLNvv1ixAdh08Da6PddQneHLyh85D2KK/vexbh6jE80mGWSi4yZIwGT1kCiBuY/suF+Ar6dVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dinam\\source\\MyProjectsCSarp\\FunnyBird\\FunnyBird\\FunnyBird.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dinam\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\dinam\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}
