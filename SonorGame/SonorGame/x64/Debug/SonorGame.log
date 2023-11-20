@@ -1,0 +1,5 @@
+﻿  GameMap.cpp
+  SonorGame.cpp
+C:\Users\dinam\source\repos\SonorGame\SonorGame\SonorGame.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  SonorGame.vcxproj -> C:\Users\dinam\source\repos\SonorGame\x64\Debug\SonorGame.exe
